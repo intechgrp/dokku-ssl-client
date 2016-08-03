@@ -8,10 +8,8 @@ case "$1" in
       cat<<help_content
     ssl-client <app> <ca.cert, Install CA and enable SSL client authentication
     ssl-client:remove <app>, Remove CA and disable SSL client authentication
-    ssl-client:stapling-file <app> <stapling.der, Install a stapling file and configure nginx accordingly
-    ssl-client:remove-stapling-file <app>, Remove an existing stapling file if any
-	ssl-client:add-crl <app> <crl.pem, Adds a CRL file and configure nginx accordingly
-	ssl-client:remove-crl <app>, Removes an existing CRL file if any
+    ssl-client:add-crl <app> <crl.pem, Adds a CRL file and configure nginx accordingly
+    ssl-client:remove-crl <app>, Removes an existing CRL file if any
 
 help_content
     }

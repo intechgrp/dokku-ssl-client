@@ -26,7 +26,7 @@ ssl_client_remove_crl_cmd() {
    cat <<EOF > $DOKKU_ROOT/$APP/nginx.conf.d/ssl-client.conf
     ssl_client_certificate $DOKKU_ROOT/$APP/ssl-client.ca;
     ssl_verify_client on;
-  EOF
+EOF
 
 }
 
