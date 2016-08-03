@@ -6,8 +6,11 @@ case "$1" in
     help_content_func () {
       declare desc="return help_content string"
       cat<<help_content
-    ssl-client <app> <ca.cert, Install CA and enable SSL client authentication"
+    ssl-client <app> <ca.cert, Install CA and enable SSL client authentication
     ssl-client:remove, Remove CA and disable SSL client authentication
+    ssl-client:stapling-file <stapling.der, Install a stapling file and configure nginx accordingly
+    ssl-client:remove-stapling-file, Remove an existing stapling file if any
+
 help_content
     }
 
